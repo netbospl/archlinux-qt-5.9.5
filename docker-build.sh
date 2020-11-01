@@ -13,10 +13,10 @@ export PACKAGER="Piotr Matela <piotrekmat@protonmail.com>"
 
 PACKAGES="qt5-base-595 qt5-xmlpatterns-595 qt5-declarative-595 qt5-location-595 qt5-quickcontrols-595 qt5-tools-595 qt5-webchannel-595 qt5-webengine-595 qt5-x11extras-595"
 
-for package in $PACKAGES; do
-    cd $package
+#for package in $PACKAGES; do
+#   #  cd $package
     # Build package
-    makepkg -si --noconfirm
+    # makepkg -si --noconfirm
 
     # Upload each built package to https://transfer.sh
     # for package_file in $package-*.pkg.*; do
@@ -24,7 +24,7 @@ for package in $PACKAGES; do
     #     mv $package_file $WORKSPACE
     # done
 
-    cd ..
-done
+    # cd ..
+# done
 
-cat $WORKSPACE/packages.txt
+# cat $WORKSPACE/packages.txt
